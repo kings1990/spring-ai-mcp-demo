@@ -51,7 +51,14 @@ spring:
                   - /path/to/mcp-server-0.0.1-SNAPSHOT.jar
 ```
 
-3. 直接启动 mcp-client spring boot 应用
+3. 直接启动 mcp-client spring boot 应用,不需要额外启动 mcp-server
+4. 检查是否连接飞书应用机器人成功
+
+日志里面可以搜到说明飞书机器人连接成功的字样
+```
+connected to wss://msg-frontier.feishu.cn/
+```
+5. 在飞书应用中给机器人发送消息，例如`北京`，等待回复
 
 ## 3. Screenshots
 ![](./imgs/sample.png)
