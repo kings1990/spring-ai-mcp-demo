@@ -13,7 +13,7 @@ spring:
       client:
         stdio:
           connections:
-            spring-ai-mcp-weather:
+            kings-spring-ai-mcp-tools:
               command: java
               args:
                 - -Dspring.ai.mcp.server.stdio=true

@@ -14,7 +14,7 @@ public class AiConfig {
     @Bean
     public ChatClient chatClient(ChatClient.Builder builder, List<McpSyncClient> mcpSyncClients) {
         return builder
-                .defaultSystem("你是一个AI助手，必须调用工具 spring-ai-mcp-tools 下的方法，如果工具不可用，就明确说明无法调用工具，不要编造。")
+                .defaultSystem("你是一个AI助手，必须调用工具 kings-spring-ai-mcp-tools 下的方法，如果工具不可用，就明确说明无法调用工具，不要编造。")
                 .defaultToolCallbacks(
                         SyncMcpToolCallbackProvider.builder()
                                 .mcpClients(mcpSyncClients)
