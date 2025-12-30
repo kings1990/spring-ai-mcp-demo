@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: mcp-server
+  main:
+    banner-mode: off
+    web-application-type: none
+  ai:
+    mcp:
+      server:
+        name: spring-ai-mcp-tools
+        stdio: true
+logging:
+  level:
+    root: info

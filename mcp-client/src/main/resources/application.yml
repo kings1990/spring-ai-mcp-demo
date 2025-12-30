@@ -1,0 +1,27 @@
+lark:
+  bot:
+    app-id: your_app_id_here
+    app-secret: your_app_secret_here
+spring:
+  ai:
+    zhipuai:
+      api-key: your_api_key_here
+      chat:
+        options:
+          model: glm-4.6
+    mcp:
+      client:
+        stdio:
+          connections:
+            spring-ai-mcp-weather:
+              command: java
+              args:
+                - -Dspring.ai.mcp.server.stdio=true
+                - -jar
+                - /path/to/mcp-server-0.0.1-SNAPSHOT.jar
+# 注意上面路径改成自己的 mcp-server jar 实际绝对路径
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    io.modelcontextprotocol: DEBUG
+
