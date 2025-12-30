@@ -1,4 +1,4 @@
-# spring-ai-demo
+# spring-ai-mcp-demo
 
 基于 AI + mcp server + mcp client + 飞书机器人实现的简单 AI 聊天示例
 
