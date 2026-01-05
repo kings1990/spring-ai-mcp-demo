@@ -1,5 +1,6 @@
 package io.kings1990.mcp.mcpserver.service;
 
+import io.kings1990.mcp.mcpserver.annotation.McpToolService;
 import io.kings1990.mcp.mcpserver.enums.WeatherType;
 import io.kings1990.mcp.mcpserver.record.WeatherRequest;
 import io.kings1990.mcp.mcpserver.record.WeatherResult;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@McpToolService
 public class WeatherService {
 
 

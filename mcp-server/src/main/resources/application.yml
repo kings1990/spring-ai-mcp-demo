@@ -9,7 +9,7 @@ spring:
   ai:
     mcp:
       server:
-        name: spring-ai-mcp-tools
+        name: kings-spring-ai-mcp-tools
         stdio: true
 logging:
   level:

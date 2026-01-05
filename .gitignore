@@ -40,3 +40,6 @@ build/
 .fastRequest
 SendMessageUtilTest.java
 application-local.yml
+
+中台.md
+MdKnowledgeService.java
