@@ -1,0 +1,24 @@
+lark:
+  bot:
+    app-id: your_app_id_here
+    app-secret: your_app_secret_here
+spring:
+  ai:
+    zhipuai:
+      api-key: your_api_key_here
+      chat:
+        options:
+          model: glm-4.6
+    mcp:
+      client:
+        request-timeout: 60000  # 增加超时时间到 60 秒
+        sse:
+          connections:
+            kings-spring-ai-mcp-tools:
+              url: http://localhost:8081/mcp/sse
+              sse-endpoint: http://localhost:8081/mcp/sse
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    io.modelcontextprotocol: DEBUG
+

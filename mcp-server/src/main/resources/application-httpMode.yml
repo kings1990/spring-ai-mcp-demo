@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: mcp-server
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: kings-spring-ai-mcp-tools
+        stdio: false
+        sse-endpoint: /mcp/sse
+        sse-message-endpoint: /mcp/messages
+logging:
+  level:
+    root: info
+    org.springframework.ai: DEBUG
+    io.modelcontextprotocol: DEBUG

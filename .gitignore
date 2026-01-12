@@ -39,7 +39,9 @@ build/
 .DS_Store
 .fastRequest
 SendMessageUtilTest.java
-application-local.yml
-
+.claude
 中台.md
 MdKnowledgeService.java
+
+application-local.yml
+application-httpModeLocal.yml
